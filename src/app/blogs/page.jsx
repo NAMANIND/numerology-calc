@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../lib/firebaseConfig";
-import "tailwindcss/tailwind.css";
 
 const Home = () => {
   const [blogs, setBlogs] = useState([]);

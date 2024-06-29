@@ -1,11 +1,9 @@
-// pages/blogadmin.js
 "use client";
 import React, { useState, useRef, useMemo } from "react";
 import dynamic from "next/dynamic";
 import { addDoc, collection } from "firebase/firestore";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { db } from "../lib/firebaseConfig";
-import "tailwindcss/tailwind.css";
 
 // Dynamically import Jodit Editor with no SSR
 const JoditEditor = dynamic(() => import("jodit-react"), {
