@@ -27,7 +27,7 @@ const Hero = () => {
   });
 
   const display2 = useTransform(scrollYProgress, (pos) =>
-    pos > 0.6 ? "flex" : "none"
+    pos > 0.45 ? "flex" : "none"
   );
   const x = useTransform(
     scrollYProgress,
@@ -36,10 +36,18 @@ const Hero = () => {
   );
   const y = useTransform(scrollYProgress, [0, 0.5], [0, 0]);
 
-  const opacity2 = useTransform(scrollYProgress, [0, 0.4, 0.41], [1, 1, 0]);
-  const opacity3 = useTransform(scrollYProgress, [0, 0.4, 0.41], [0, 1, 1]);
+  const opacity2 = useTransform(
+    scrollYProgress,
+    [0, 0.3, 0.4, 0.41],
+    [1, 1, 0.5, 0]
+  );
+  const opacity3 = useTransform(
+    scrollYProgress,
+    [0.55, 0.6, 0.65, 1],
+    [0, 0.8, 1, 1]
+  );
 
-  const rotate = useTransform(scrollYProgress, [0, 0.45, 0.65], [360, 180, 0]);
+  const rotate = useTransform(scrollYProgress, [0, 0.45, 0.65], [0, 180, 360]);
 
   // Update mouse position effect
   //   useEffect(() => {

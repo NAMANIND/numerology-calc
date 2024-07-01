@@ -86,7 +86,7 @@ const Cards = () => {
                 animate="center"
                 exit={islastelement ? "exit" : "exit2"}
                 onClick={() => {
-                  window.location.href = `/card/${card}`;
+                  window.location.href = `/#${card}`;
                 }}
                 // change enter and exit on the basis of the direction of the card
               >

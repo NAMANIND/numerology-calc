@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`w-full flex fixed z-50 top-10 justify-center items-center text-white py-4  ${anteroly.className} `}
+      className={`w-full flex fixed z-50 top-10 text-xl justify-center items-center text-white py-4  ${anteroly.className} `}
     >
       <ul
         className="flex justify-center items-center   bg-[#5A00B47A]  py-3  rounded-full
